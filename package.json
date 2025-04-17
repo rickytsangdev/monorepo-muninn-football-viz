@@ -1,0 +1,19 @@
+{
+  "name": "monorepo-kaizenlytics",
+  "version": "1.0.0",
+  "private": true, 
+  "description": "analytics apps",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -r --filter './apps/*' run build",
+    "start:frontend": "pnpm --filter './apps/frontend' exec ng serve",
+    "start:backend": "pnpm --filter './apps/backend' run dev",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.1"
+}
